@@ -51,22 +51,28 @@ Version: 1.0
 
 /*CSS for Header*/
 .header{
-    background-color: #006400;
-    color: #FFFFFF;
+    background-color: #fff;
+    color: #000;
+    
 }
 .header .wrapper .logo{
     width: 20%;
-    float: left;
+    float: right;
+    position: relative;
+    left: -50%; /* or right 50% */
+    text-align: left;
 }
 .header .wrapper .logo img{
     width: 100%;
+    position: relative;
+    left: 50%;
 }
-.header .wrapper .head-title{
+/* .header .wrapper .head-title{
     width: 80%;
-}
+} */
 .header .wrapper .head-title h1{
     font-weight: lighter;
-    line-height: 60px;
+    /* line-height: 60px; */
     text-align: center;
 }
 
@@ -294,8 +300,8 @@ Version: 1.0
 }
 /*CSS for Footer*/
 .footer{
-    background-color: #006400;
-    color: #FFFFFF;
+    background-color: #fff;
+    color: #000;
 }
 .footer p{
     text-align: center;

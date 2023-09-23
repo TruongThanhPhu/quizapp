@@ -4,7 +4,7 @@
                 <div class="report">
                     
                     <form method="post" action="" class="forms">
-                        <h2>Add Faculty</h2>
+                        <h2>Thêm khoa</h2>
                         <?php 
                             if(isset($_SESSION['validation']))
                             {
@@ -17,13 +17,13 @@
                                 unset($_SESSION['add']);
                             }
                         ?>
-                        <span class="name">Faculty Title</span> 
+                        <span class="name">Tên khoa</span> 
                         <input type="text" name="faculty_name" placeholder="Faculty Title" required="true" /> <br />
                         
-                        <span class="name">Time Duration</span>
+                        <span class="name">Khoảng thời gian</span>
                         <input type="text" name="time_duration" placeholder="Time Duration in Minutes" required="true" /><br />
                         
-                        <span class="name">Questions/Set</span>
+                        <span class="name">Câu hỏi</span>
                         <input type="text" name="qns_per_page" placeholder="Total Questions Per Page" required="true" /><br />
                         
                         <span class="name">Total English Qns</span>
