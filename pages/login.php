@@ -24,11 +24,11 @@
                         $password=$obj->sanitize($conn,$_POST['password']);
                         //Check Login
                         $tbl_name="tbl_student";
-                        $where="username='$username' && password='$password' && is_active='yes'";
+                        $where="username='$username' && password='$password'";
                         $query=$obj->select_data($tbl_name,$where);
                         $res=$obj->execute_query($conn,$query);
                         $count_rows=$obj->num_rows($res);
-                        if($count_rows>0)
+                        if($count_rows==1)
                         {
                             $_SESSION['student']=$username;
                             $_SESSION['login']="<div class='success'>Login Successful.</div>";

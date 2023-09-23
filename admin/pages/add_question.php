@@ -68,10 +68,10 @@
                         <input type="text" name="marks" placeholder="Marks for this question" />
                         <br />
                         
-                        <span class="name">Category</span>
+                        <span class="name">Độ khó</span>
                         <select name="category">
-                            <option value="English">English</option>
-                            <option value="Math">Math</option>
+                            <option value="English">Dễ</option>
+                            <option value="Math">Trung bình</option>
                         </select>
                         <br />
                         

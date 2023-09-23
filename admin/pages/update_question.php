@@ -110,10 +110,10 @@
                         <input type="text" name="marks" value="<?php echo $marks; ?>" />
                         <br />
                         
-                        <span class="name">Category</span>
+                        <span class="name">Độ khó</span>
                         <select name="category">
-                            <option <?php if($category=="English"){echo "selected='seleccted'";} ?> value="English">English</option>
-                            <option  <?php if($category=="Math"){echo "selected='seleccted'";} ?> value="Math">Math</option>
+                            <option <?php if($category=="English"){echo "selected='seleccted'";} ?> value="English">Dễ</option>
+                            <option  <?php if($category=="Math"){echo "selected='seleccted'";} ?> value="Math">Trung bình</option>
                         </select>
                         <br />
                         
