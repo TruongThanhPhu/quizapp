@@ -83,12 +83,12 @@
                             if($sn<=$total_english)
                             {
                                 //New Query FOR ENGLISH
-                                $where="is_active='yes' && category='English' && faculty='".$faculty."' && question_id NOT IN (".$_SESSION['all_qns'].")";
+                                $where="is_active='yes' && faculty='".$faculty."' && question_id NOT IN (".$_SESSION['all_qns'].")";
                             }
                             else
                             {
                                 //New Query FOR MATHS
-                                $where="is_active='yes' && category='Math' && faculty='".$faculty."' && question_id NOT IN (".$_SESSION['all_qns'].")";
+                                $where="is_active='yes' && faculty='".$faculty."' && question_id NOT IN (".$_SESSION['all_qns'].")";
                             }
                             //Get Maths Questions Only
                             //New Query

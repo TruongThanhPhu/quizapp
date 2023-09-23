@@ -20,7 +20,7 @@
                    $answer=$row['answer'];
                    $reason=$row['reason'];
                    $marks=$row['marks'];
-                   $category=$row['category'];
+                  
                    $faculty_db=$row['faculty'];
                    $is_active=$row['is_active'];
                    $previous_image=$row['image_name'];
@@ -110,12 +110,7 @@
                         <input type="text" name="marks" value="<?php echo $marks; ?>" />
                         <br />
                         
-                        <span class="name">Độ khó</span>
-                        <select name="category">
-                            <option <?php if($category=="English"){echo "selected='seleccted'";} ?> value="English">Dễ</option>
-                            <option  <?php if($category=="Math"){echo "selected='seleccted'";} ?> value="Math">Trung bình</option>
-                        </select>
-                        <br />
+                        
                         
                         <span class="name">Faculty</span>
                         <select name="faculty">
@@ -167,7 +162,7 @@
                             $answer=$obj->sanitize($conn,$_POST['answer']);
                             $reason=$obj->sanitize($conn,$_POST['reason']);
                             $marks=$obj->sanitize($conn,$_POST['marks']);
-                            $category=$obj->sanitize($conn,$_POST['category']);
+                          
                             $faculty=$obj->sanitize($conn,$_POST['faculty']);
                             $previous_image=$_POST['previous_image'];
                             if(isset($_POST['is_active']))
@@ -243,7 +238,7 @@
                                     answer='$answer',
                                     reason='$reason',
                                     marks='$marks',
-                                    category='$category',
+                                 
                                     faculty='$faculty',
                                     is_active='$is_active',
                                     updated_date='$updated_date',

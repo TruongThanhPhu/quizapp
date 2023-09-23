@@ -68,12 +68,7 @@
                         <input type="text" name="marks" placeholder="Marks for this question" />
                         <br />
                         
-                        <span class="name">Độ khó</span>
-                        <select name="category">
-                            <option value="English">Dễ</option>
-                            <option value="Math">Trung bình</option>
-                        </select>
-                        <br />
+                        
                         
                         <span class="name">Faculty</span>
                         <select name="faculty">
@@ -171,7 +166,7 @@
                             $answer=$obj->sanitize($conn,$_POST['answer']);
                             $reason=$obj->sanitize($conn,$_POST['reason']);
                             $marks=$obj->sanitize($conn,$_POST['marks']);
-                            $category=$obj->sanitize($conn,$_POST['category']);
+                            
                             $added_date=date('Y-m-d');
                             
                             $tbl_name='tbl_question';
@@ -184,7 +179,7 @@
                                     answer='$answer',
                                     reason='$reason',
                                     marks='$marks',
-                                    category='$category',
+                                 
                                     faculty='$faculty',
                                     is_active='$is_active',
                                     added_date='$added_date',
